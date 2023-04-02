@@ -1,0 +1,77 @@
+h2
+{
+	color: darkred;
+	text-align: center;
+}
+h3
+{
+	color: darkred;
+	text-align: center;
+}
+body
+{
+	background-color: lightgray;
+	padding: 50px;
+}
+
+@keyframes animation {
+	0% { background-image: url('picture/flappyMoove1.png'); }
+	50% { background-image: url('picture/flappyMoove2.png'); }
+	100% { background-image: url('picture/flappyMoove3.png'); }
+}
+
+.animation {
+
+	position: fixed;
+	box-sizing: border-box;
+	display: block;
+	margin: auto;
+	text-align: center;
+	top : 45%;
+	left: 45%;
+	animation: animation 1s steps(4) infinite;
+	width: 40px;
+	height: 40px;
+  }
+
+.container {
+	position: absolute;
+	top: 55%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	display: inline-block;
+	width: 360px;
+	height: 640px;
+	border: 1px solid black;
+}
+
+ul
+{
+	list-style-type: none;
+}
+
+.menu {
+	position: fixed;
+	box-sizing: border-box;
+	display: block;
+	margin: auto;
+	text-align: center;
+	top : 25%;
+	left: 10%;
+}
+.menu a /*ecriture*/
+{
+
+	color:blueviolet;
+	font-size: 40px;
+	font-family: Courier New, monospace;
+	font-weight: bold;
+	white-space: nowrap;
+}
+
+/* #fondfb
+{
+	border: 1px solid black;
+	display: block;
+	margin: auto;
+} */
