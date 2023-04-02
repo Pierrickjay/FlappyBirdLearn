@@ -21,7 +21,6 @@ body
 }
 
 .animation {
-
 	position: fixed;
 	box-sizing: border-box;
 	display: block;
@@ -30,8 +29,8 @@ body
 	top : 45%;
 	left: 45%;
 	animation: animation 1s steps(4) infinite;
-	width: 32px;
-	height: 32px;
+	width: 48px;
+	height: 48px;
 }
 
 
@@ -105,6 +104,28 @@ ul
 	white-space: nowrap;
 }
 
+.game {
+	display: none;
+}
+.game #tubeUp{
+	display: block;
+	position: fixed;
+	box-sizing: border-box;
+	margin: auto;
+	text-align: center;
+	top :60%;
+	left: 80%;
+}
+
+.game #tubeDown{
+	display: block;
+	position: fixed;
+	box-sizing: border-box;
+	margin: auto;
+	text-align: center;
+	top : -1%;
+	left: 80%;
+}
 
 /* #fondfb
 {
