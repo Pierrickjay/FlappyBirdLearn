@@ -2,7 +2,6 @@
 <html>
 	<head>
 		<link rel="stylesheet" href="style.css">
-		<script src="game.js"></script>
 		<title>FlappyBird</title>
 	</head>
 	<body>
@@ -12,11 +11,25 @@
 			<img id = "fondfb" src = "picture/bg.png" alt = "fond FlappyBird">
 			<div class="menu">
 				<ul>
-					<li><a href="Play Game"> Jouer<br><br><br><br><br></a></li>
-					<div class = "animation"></div>
-					<li><a href="Best score" >Best Score</a></li>
+					<li><a href="#" id = "jouer"> Jouer<br><br><br><br><br></a></li>
+					<li><a href="#" id = "best-score">Best Score</a></li>
+				</ul>
+			</div>
+			<div class = "animation"></div>
+			<div class = "menuBestScore">
+				<h3>Best Score in game<br></h3>
+				<a href="#back">
+					<img id = "back" src = "picture/back.png"  alt = "retour en arriere">
+				</a>
+				<ul>
+					<li>#1 159189<br><br><br></li>
+					<li>#2 159189<br><br><br></li>
+					<li>#3 159189<br><br><br></li>
+					<li>#4 159189<br><br><br></li>
+					<li>#5 159189<br></li>
 				</ul>
 			</div>
 		</div>
+		<script src="game.js"></script>
 	</body>
 </html>

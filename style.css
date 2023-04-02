@@ -32,7 +32,8 @@ body
 	animation: animation 1s steps(4) infinite;
 	width: 32px;
 	height: 32px;
-  }
+}
+
 
 .container {
 	position: absolute;
@@ -61,13 +62,49 @@ ul
 }
 .menu a /*ecriture*/
 {
-
 	color:blueviolet;
 	font-size: 40px;
 	font-family: Courier New, monospace;
 	font-weight: bold;
 	white-space: nowrap;
 }
+
+.menuBestScore{
+	position: fixed;
+	box-sizing: border-box;
+	display: none;
+	margin: auto;
+	text-align: center;
+	top : 5%;
+	left: 5%;
+}
+.menuBestScore h3 {
+	color:blueviolet;
+	font-size: 30px;
+	font-family: Courier New, monospace;
+	font-weight: bold;
+	white-space: nowrap;
+}
+
+.menuBestScore #back
+{
+	position: fixed;
+	box-sizing: border-box;
+	display: block;
+	margin: auto;
+	text-align: center;
+	top : 0%;
+	left: 0%;
+}
+
+.menuBestScore li {
+	color:blueviolet;
+	font-size: 30px;
+	font-family: Courier New, monospace;
+	font-weight: bold;
+	white-space: nowrap;
+}
+
 
 /* #fondfb
 {
