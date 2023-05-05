@@ -6,7 +6,8 @@
 	</head>
 	<body>
 		<h2>Welcome to flappy bird remake by pjay</h2>
-		<h3>You best score is : </h3>
+		<h2>coucou ca va</h2>
+		<h3>You best score is : <span id="BestScorePrint">0</span></h3>
 		<div class= "container">
 			<img id = "fondfb" src = "picture/bg.png" alt = "fond FlappyBird">
 			<div class="menu">
@@ -15,23 +16,37 @@
 					<li><a href="#" id = "best-score">Best Score</a></li>
 				</ul>
 			</div>
-			<div class = "animation"></div>
+			<div id = "animation"></div>
 			<div class = "menuBestScore">
 				<h3>Best Score in game<br></h3>
 				<a href="#back">
 					<img id = "back" src = "picture/back.png"  alt = "retour en arriere">
 				</a>
 				<ul>
-					<li>#1 159189<br><br><br></li>
-					<li>#2 159189<br><br><br></li>
-					<li>#3 159189<br><br><br></li>
-					<li>#4 159189<br><br><br></li>
-					<li>#5 159189<br></li>
+					<li>#1 <div id = "first">0</div><br></li>
+					<li>#2 <div id = "second">0</div><br></li>
+					<li>#3 <div id = "third">0</div><br></li>
+					<li>#4 <div id = "four">0</div><br></li>
+					<li>#5 <div id = "five">0</div></li>
 				</ul>
 			</div>
 			<div class = "game">
-				<img id = "tubeUp" src = "picture/tubeup.png"  alt = "tube Up">
-				<img id = "tubeDown" src = "picture/tubedown.png" alt = "tube Down">
+				<div id ="block"></div>
+				<div id ="hole"></div>
+				<div id ="block2"></div>
+				<div id ="hole2"></div>
+				<div id = "score"><p>Best score is <span id="Score">0</span></p></div>
+				<div class = "gameOverLayout">
+					<img id = "GameOverImg" src = "picture/gameOver.png" alt = "gameover">
+					<div id = "GameOverMenu">
+						<a href="#retry">
+							<img id = "retry" src = "picture/BackButton.png"  alt = "retour en arriere">
+						</a>
+						<a href="#StartAgain">
+							<img id = "StartAgain" src = "picture/StartButton.png"  alt = "start game">
+						</a>
+					</div>
+				</div>
 			</div>
 		</div>
 		<script src="game.js"></script>

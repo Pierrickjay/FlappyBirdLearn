@@ -1,3 +1,9 @@
+
+*{
+	padding: 0;
+	margin: 0;
+}
+
 h2
 {
 	color: darkred;
@@ -14,36 +20,46 @@ body
 	padding: 50px;
 }
 
+
 @keyframes animation {
 	0% { background-image: url('picture/flappyMoove1.png'); }
 	50% { background-image: url('picture/flappyMoove2.png'); }
 	100% { background-image: url('picture/flappyMoove3.png'); }
 }
 
-.animation {
-	position: fixed;
-	box-sizing: border-box;
-	display: block;
-	margin: auto;
-	text-align: center;
-	top : 45%;
-	left: 45%;
-	animation: animation 1s steps(4) infinite;
-	width: 48px;
-	height: 48px;
-}
-
 
 .container {
 	position: absolute;
-	top: 55%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	display: inline-block;
 	width: 360px;
 	height: 640px;
+	overflow: hidden;
+	left : 35%;
+	top : 10%;
+	/* margin: auto; */
+	/*display: inline-block;*/
 	border: 1px solid black;
 }
+
+
+
+p
+{
+	position: absolute;
+	color: darkred;
+	font-size: 30px;
+	left:150px;
+	top: 0px;
+}
+
+#animation {
+	width: 48px;
+	height: 48px;
+	left: 10%;
+	top: 320px;
+	position: absolute;
+	animation: animation 1s steps(4) infinite;
+}
+
 
 ul
 {
@@ -51,14 +67,15 @@ ul
 }
 
 .menu {
-	position: fixed;
+	position: absolute;
 	box-sizing: border-box;
 	display: block;
 	margin: auto;
 	text-align: center;
-	top : 25%;
-	left: 10%;
+	left:50px;
+	top: 150px;
 }
+
 .menu a /*ecriture*/
 {
 	color:blueviolet;
@@ -69,14 +86,15 @@ ul
 }
 
 .menuBestScore{
-	position: fixed;
+	position: absolute;
 	box-sizing: border-box;
 	display: none;
 	margin: auto;
 	text-align: center;
-	top : 5%;
-	left: 5%;
+	left:5%;
+	top: 10%;
 }
+
 .menuBestScore h3 {
 	color:blueviolet;
 	font-size: 30px;
@@ -87,13 +105,11 @@ ul
 
 .menuBestScore #back
 {
-	position: fixed;
+	position: absolute;
 	box-sizing: border-box;
-	display: block;
 	margin: auto;
-	text-align: center;
-	top : 0%;
-	left: 0%;
+	top : -60px;
+	left: -10px;
 }
 
 .menuBestScore li {
@@ -107,7 +123,98 @@ ul
 .game {
 	display: none;
 }
-.game #tubeUp{
+
+#block
+{
+	position: absolute;
+	top: 0%;
+	left:310px;
+	width:50px;
+	height: 640px;
+	background-color: black;
+}
+
+#block2
+{
+	position: absolute;
+	top: 0%;
+	left: 580px;
+	width:50px;
+	height: 640px;
+	background-color: black;
+}
+
+#hole
+{
+	position: absolute;
+	width: 50px;
+	height: 200px;
+	top: 260px;
+	left: 310px;
+	background-color: white;
+}
+
+#hole2
+{
+	position: absolute;
+	width: 50px;
+	height: 200px;
+	top: 460px;
+	left: 530px;
+	background-color: white;
+}
+
+.GameOverLayout
+{
+	display: none;
+}
+
+#GameOverImg
+{
+	position: absolute;
+	width: 400px;
+	height: 500px;
+	left: 10px;
+	top: -80px;
+}
+
+#GameOverMenu
+{
+	position: absolute;
+	box-sizing: border-box;
+	width: 320px;
+	height: 200px;
+	left:5%;
+	top: 380px;
+	border-radius: 20px;
+	background: #05714df0;
+	padding: 1.8rem;
+	border: 2px solid #c3c6ce;
+	transition: 0.5s ease-out;
+	overflow: visible;
+}
+
+#retry
+{
+	position: absolute;
+	width: 140px;
+	height: 80px;
+	left: 50%;
+	top: 50px;
+}
+
+#StartAgain
+{
+
+	/* box-sizing: border-box; */
+	position: absolute;
+	width: 140px;
+	height: 80px;
+	left:2%;
+	top: 50px;
+}
+
+/* #tubeUp{
 	display: block;
 	position: fixed;
 	box-sizing: border-box;
@@ -117,7 +224,7 @@ ul
 	left: 80%;
 }
 
-.game #tubeDown{
+#tubeDown{
 	display: block;
 	position: fixed;
 	box-sizing: border-box;
@@ -125,7 +232,7 @@ ul
 	text-align: center;
 	top : -1%;
 	left: 80%;
-}
+} */
 
 /* #fondfb
 {
